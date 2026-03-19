@@ -1,0 +1,175 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background-color: #0c0521;
+  font-family: Arial, sans-serif;
+  padding: 0;
+}
+
+.konten {
+  padding: 30px;
+}
+
+h2 {
+  color: #e8b86d;
+  border-bottom: 3px solid #e8b86d;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+h3 { color: #e8b86d; margin-bottom: 8px; }
+p { color: #e8b86d; line-height: 1.8; font-size: 14px; margin-bottom: 10px; }
+
+/* Kartu */
+.kartu {
+  background-color: #35452f;
+  color: white;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #e8b86d;
+  position: relative;
+}
+.kartu table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.kartu th {
+  background-color: #35452f;
+  color: #e8b86d;
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 2px solid #e8b86d;
+}
+.kartu td {
+  padding: 10px 14px;
+  color: #f0eeff;
+  border-bottom: 1px solid #e8b86d;
+}
+.kartu tr:hover td {
+  background-color: #2e3060;
+}
+.kartu p { color: #f0e4e4; }
+
+/* Badge absolute */
+.badge-abs {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  background-color: #e85d75;
+  color: white;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+/* Profil layout */
+.profil-box {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+.profil-kiri { flex-shrink: 0; }
+.profil-kiri a { color: #e85d75; text-decoration: none; font-size: 14px; }
+.profil-kiri a:hover { text-decoration: underline; }
+.profil-kanan { flex: 1; }
+
+/* Badge info */
+.badge-info { margin-top: 15px; display: flex; gap: 8px; flex-wrap: wrap; }
+.badge {
+  background-color: #1a1a2e;
+  color: #e8b86d;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Tabel */
+table { border-collapse: collapse; width: 100%; }
+th {
+  background-color: #35452f;
+  color: #e8b86d;
+  padding: 10px;
+  text-align: left;
+}
+td { padding: 10px; color: #ffffff; border-bottom: 1px solid #8888dd; }
+tr:hover td { background-color: #e8f0ff; }
+
+/* Form */
+input, select, textarea {
+  border: 1px solid #aaaaaa;
+  border-radius: 6px;
+  padding: 8px;
+  width: 280px;
+  font-family: Arial;
+  font-size: 13px;
+}
+input[type="submit"] {
+  background-color: #1a1a2e;
+  color: #e8b86d;
+  cursor: pointer;
+  width: auto;
+  padding: 8px 20px;
+  border: none;
+}
+input[type="reset"] {
+  background-color: #aaaaaa;
+  color: white;
+  cursor: pointer;
+  width: auto;
+  padding: 8px 20px;
+  border: none;
+}
+label { font-size: 13px; color: #ffffff; font-weight: bold; }
+.konten form {
+
+  width: 100%;
+
+}
+.konten .kartu {
+  width: 100%;
+}
+input, select, textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+input[type="radio"],
+input[type="submit"],
+input[type="reset"] {
+  width: auto;
+}
+
+/* Sosmed-link */
+.sosmed-link {
+  display: inline-block;
+  background-color: #1a1a2e;
+  color: #e8b86d;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  text-decoration: none;
+  margin-right: 8px;
+  margin-top: 10px;
+}
+.sosmed-link:hover { background-color: #e8b86d; color: #1a1a2e; }
+
+/* CV */
+.cv-box {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.foto-cv {
+  width: 150px;
+  height: 190px;
+  object-fit: cover;
+  border: 3px solid #e8b86d;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.cv-teks {
+  flex: 1;
+}

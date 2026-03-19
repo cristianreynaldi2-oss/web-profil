@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Web Profil - Cristian Reynaldi</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; flex-direction: column; height: 100vh; font-family: Arial, sans-serif; }
+  #header {
+    background-color: #1a1a2e;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 2px solid #e8b86d;
+  }
+  #header img {
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    border: 2px solid #e8b86d;
+    object-fit: cover;
+  }
+  #header-text h1 { color: #e8b86d; font-size: 18px; letter-spacing: 3px; }
+  #header-text p { color: #aaaaaa; font-size: 12px; }
+  #badge {
+    margin-left: auto;
+    background-color: #e85d75;
+    color: white;
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+  #frames { display: flex; flex: 1; overflow: hidden; }
+  iframe#nav {
+    width: 200px;
+    height: 100%;
+    border: none;
+    border-right: 2px solid #e8b86d;
+    flex-shrink: 0;
+  }
+  iframe#konten {
+    flex: 1;
+    height: 100%;
+    border: none;
+  }
+  #footer {
+    background-color: #1a1a2e;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+    border-top: 2px solid #e8b86d;
+  }
+</style>
+</head>
+<body>
+  <div id="header">
+    <img src="Foto Profil baru.png" alt="Foto Profil">
+    <div id="header-text">
+      <h1>CRISTIAN REYNALDI</h1>
+      <p>D4 Teknologi Rekayasa Perangkat Lunak — Politeknik Negeri Madiun</p>
+    </div>
+    <span id="badge">Mahasiswa</span>
+  </div>
+
+  <div id="frames">
+    <iframe id="nav" src="nav.html"></iframe>
+    <iframe id="konten" name="konten" src="tentang.html"></iframe>
+  </div>
+
+  <div id="footer">
+    &copy; 2025 Cristian Reynaldi. All rights reserved.
+  </div>
+</body>
+</html>
